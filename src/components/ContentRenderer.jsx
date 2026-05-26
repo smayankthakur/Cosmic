@@ -131,12 +131,12 @@ function Upayas({ items }) {
     <div>
       {items.map((u, i) => (
         <div key={i} className="card" style={{ marginBottom: '0.75rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.6rem' }}>
-            <div style={{ fontFamily: 'Cinzel, serif', fontSize: '0.8rem', color: u.color }}>{u.planet}</div>
+          <div style={{ className="upaya-planet-header" }}>
+            <div className="upaya-planet-name" style={{ color: u.color }}>{u.planet}</div>
             <span className="badge badge-gold">{u.badge}</span>
           </div>
           {u.items.map((item, j) => (
-            <div key={j} style={{ fontSize: '0.85rem', color: 'var(--cream-d)', padding: '0.25rem 0', paddingLeft: '0.8rem', borderLeft: '1px solid var(--border-b)', lineHeight: '1.55', marginBottom: '0.25rem' }}>
+            <div key={j} className="upaya-item">
               {item}
             </div>
           ))}

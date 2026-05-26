@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "npx vite",
-    "build": "node node_modules/vite/bin/vite.js build",
+    "build": "npx vite build",
     "preview": "npx vite preview"
   }
 }
