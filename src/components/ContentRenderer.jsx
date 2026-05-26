@@ -129,11 +129,11 @@ function GoldenPeriods({ items }) {
 function Upayas({ items }) {
   return (
     <div>
-      {items.map((u, i) => (
-        <div key={i} className="card" style={{ marginBottom: '0.75rem' }}>
-          <div style={{ className="upaya-planet-header" }}>
-            <div className="upaya-planet-name" style={{ color: u.color }}>{u.planet}</div>
-            <span className="badge badge-gold">{u.badge}</span>
+        {items.map((u, i) => (
+          <div key={i} className="card" style={{ marginBottom: '0.75rem' }}>
+            <div className="upaya-planet-header">
+              <div className="upaya-planet-name" style={{ color: u.color }}>{u.planet}</div>
+              <span className="badge badge-gold">{u.badge}</span>
           </div>
           {u.items.map((item, j) => (
             <div key={j} className="upaya-item">
